@@ -13,7 +13,8 @@
   
     
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
+        
+      <div class="container">
           <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +23,7 @@
           
          
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav m-4">
               
               <li class="nav-item ">
                 <a class="nav-link" href="#">Home</a>
@@ -47,26 +48,31 @@
       </nav>
     
     
-<div id="showcase">
-    <div class="row ">
-            <div class="col -md-6">
+<div id="showcase" class="container">
+    <div class="row mt-5 ">
+            <div class="col -md-6 mt-5">
                 <h1>Creative Way to 
                 Showcase Your App </h1>
-                <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry Lorem Ipsum is simply</p>
+                <p class="mt-4">Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry Lorem Ipsum is simply</p>
                     <!--buttons-->
-                    <div class="d-flex"  >
+                    <div class="d-flex mt-4"  >
                         
-                        <div><button class="outlinebtn"><p>DownLoad Now</p></div>
+                        <button class="outlinebtn"><p>DownLoad Now</p></button>
               
-                        <div class="d-flex align-items-right">
-                        <a href=""><img src="images/playicon.svg"></a>
-                        <span>Watch Video </span>
+                        <div class="ms-3 mt-3">
+                        <a href="#"><img src="images/playicon.svg"></a>
+                        <span >Watch Video </span>
                         </div>
-                    </div>
+                    
+                      </div>
             </div>
             <!--col2-->
-            <div class="col -md-6">
-              <img src ="images/Mobile.png">
+            <div class="col -md-6" ">
+              <div class="mobs">
+              <img class="mob1"  src ="images/iPhone X - Light.png"> 
+              <img class="mob2"  src ="images/iPhone X - Light.png">
+            <!--  <img src="images/Mobile.png">-->
+             </div>
             </div>
         
     </div>
@@ -84,7 +90,7 @@
             <div class="col">
                   <div class="heading">About Us</div>
             
-                  <h1>Easy To Search Your Items By This App</h1>
+                  <h1 class="mt-5">Easy To Search Your Items By This App</h1>
                 
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
                     the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
@@ -93,37 +99,75 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                   </p>
             
-                  <div class="d-flex align-items-center w-100" style="border: 1px solid;"  >
-                      <div class="w-50" style="border: 1px solid;"><img src="images/googleplayicon.svg"></div>     
-                      <div class="w-50"> <img src="images/appstoreicon.svg"></div>
+                  <div class="d-flex align-items-center w-100 mt-5" >
+                      <div class="d-flex w-50 " >
+                        <img src="images/googleplayicon.svg">
+                        
+                        <div class="ms-4" >
+                              <p class="pmini">Get it from</p>
+                              <h2>Google Play</h2>
+                        </div>
+                      </div>     
+                      <div class="d-flex w-50 " > 
+                        <img src="images/appstoreicon.svg">
+                        <div class="ms-4"  >
+                          <p class="pmini">Download on the</p>
+                          <h2>App Store</h2>
+                    </div>
                   </div>
-                  
-              
+            </div>      
+      </div>
+  </div>        
               
                   
                 
-            </div>
-    </div>
-  </div>
+            
+    
   <!--Features-->
   <div id="features">
+    <img class="marginpic" src="images/Repeat Grid 1.svg">
     <div class="row ">
           <div class="col -md-6>">
             <div class="heading">Features</div>
-            <h1>Easy To search Your Items By This App</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+            <h1 class="mt-4">Easy To search Your Items By This App</h1>
+            <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
               the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
               of type and scrambled </p>
-              <div class="d-flex align-items-center w-100" style="border: 1px solid;"  >
-                <div class="w-50" style="border: 1px solid;"><img src="images/searchicon.svg"></div>     
-                <div class="w-50"><img src="images/soundicon.svg"></div>
-            </div>
-            <div class="d-flex align-items-center w-100" style="border: 1px solid;"  >
-              <div class="w-50" style="border: 1px solid;"><img src="images/homeicon.svg"></div>     
-              <div class="w-50"><img src="images/headseticon.svg"></div>
-          </div>  
               
-          </div>
+              <div class="d-flex align-items-center w-100 mt-2"  >
+                    <div class="d-flex w-50">
+                        <img class="small_img" src="images/searchicon.svg">
+                        <div class="ms-4" >
+                        <h2>Ease of search</h2>
+                        <p class="pmini">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                        </div>
+                    </div>     
+                
+                    <div class="d-flex w-50">
+                          <img class="small_img" src="images/soundicon.svg">
+                            <div class="ms-4" >
+                            <h2>Manage your ads</h2>
+                            <p class="pmini">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="d-flex align-items-center w-100" >
+                      <div class="d-flex w-50" >
+                        <img class="small_img" src="images/homeicon.svg">
+                        <div class="ms-4" >
+                          <h2>Ease main</h2>
+                          <p class="pmini">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                          </div>
+                      </div>     
+                      <div class="d-flex w-50">
+                        <img class="small_img" src="images/headseticon.svg">
+                          <div class="ms-4" >
+                          <h2>Ongoing support</h2>
+                          <p class="pmini">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                          </div>
+                      </div>
+          </div>  
+      </div>
           <div class="col -md-6>">
           <div class="layer3"><img src="images/layer3.svg"></div>
           <div class="layer2"><img src="images/layer2.svg"></div>
@@ -138,7 +182,7 @@
           <h1>Application Screens</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
         </div>
-        <div class="row " style="border: 1px solid; padding-top: 0px;">
+        <div class="row " >
           <div class="col mt-0"><img class="img" src="images/iPhone Xwhite.png"></div>
           <div class="col mt-0"><img class="img" src="images/iPhone Xgrey.png"></div>
           
@@ -190,14 +234,26 @@
     <h1>Contact Us</h1>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
   </div>
-  <div class="mb-3">
-    <label git commit -m "first"class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+ 
+  <form class="row g-3">
+        <div class="col -md-6>">
+        <input class="form-control" type="text" placeholder="Enter Your Name" aria-label="default input example">
+        </div>
+        <div class="col -md-6>" >
+        <input class="form-control" type="text" placeholder="Enter Your Email" aria-label="default input example">
+        </div>
+        </row>
+        <row>
+        <div class="col -md-12 mt-2" >
+        <textarea class="form-control" placeholder="Enter Your Message" rows="3"></textarea>
+        </div>
+        <button>Send</button>
+      </row>
   </div>
-  
-
+  </div>
+<div class="footerbg mt-5">
+hej
 </div>
-
 </div>
     
 

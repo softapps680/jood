@@ -12,29 +12,30 @@ blue:           #1487fd
 */
 
 body{
-    background-color: white;
+    background-color:#ffff;
   
 }
 
  #topbg  {
     background: url(images/Group\ 4634.svg) , url(images/Rectangle\ 1914.svg);
-    background-size: auto;
+    
     background-repeat: no-repeat;
     background-position:-250px -1029px;
     background-size: auto;
     }
     
+    /*Navbaren*/
+    .navbar {
+      /*margin-left: 350px;*/
+      margin:auto;
+      width: 1160px;
+      }   
     
-    /*logga*/
-    .navbar-light .navbar-brand {
-      /*color: rgba(0, 0, 0, 0.9);*/
-      margin-left: 150px;
-    }
-    /*Modifiera standard navbar från bootstrap*/
-   .navbar-light .navbar-nav .nav-link {
+     .navbar-light .navbar-nav .nav-link {
       color: #ffffff;
       font-weight: 500;
-       border-bottom: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+     
     }
     
     .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
@@ -43,16 +44,42 @@ body{
       width: 62%;
     }
     
-    /**Fixa*/
-  
- 
- .btn{
-    width: 110px;
-    margin-right: 5px;
-    margin-left: 5px;
+  .btn{
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 13px 22px;
+    min-width: 150px;
+    min-height: 40px;
    
     }
+    .btn-warning {
+      color: #ffffff;
+      background-color: #ffbb00;
+      border-color: #ffbb00;
+    }
+    /*Showcase*/
+    #showcase{
+      display:flex; 
+      width:1165px;
+      margin: auto;;
+      text-align: left;
+      color: #ffffff;
+     font-family: 'Poppins', sans-serif;
     
+     
+    }
+    #showcase h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 50px;
+    }
+    #showcase p{
+   font-weight: 500;
+   font-size: 15px;
+   font-family: 'Roboto', sans-serif; 
+    }
+
   .outlinebtn{
     background-color: transparent;
     color:#fff;
@@ -62,36 +89,26 @@ body{
     padding-top:20px;
     border: 1px solid white;
   }
- #showcase{
-     display:flex; 
-     width:1165px;
-     margin-left: 225px;
-     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    border:1px dotted;
-    
-}
-#showcase h1 {
-  font-weight: 700;
-  font-size: 50px;
-  margin-top: 150px;
-}
-#showcase p{
-  font-weight: 500;
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif; 
-}
-
- .row {
-  width:1165px;
-  margin-top: 0;
+  #showcase .mobs{
+    position: relative;
+    text-align: right;
+   }
   
- }
-.col{
-   margin-top: 60px;
-     border:1px solid;
-     
+  
+  #showcase .mob1 {
+    position: relative;
+    top: 60px;
+    left:-200px;
+    
+  }
+  #showcase .mob2 {
+    position: absolute;
+    top: -40px;
+    left: 265px;
     }
+ 
+ 
+/*reuseable about us featues*/
     .heading{
       border-radius: 15px;
       background-color:rgba(255, 187, 0,0.4) ;
@@ -103,36 +120,73 @@ body{
  /*About us*/ 
  @keyframes spin { 100% { transform: rotate(360deg); }}
     #about-us {
-      margin-top: 10rem;
-     margin-left: 225px;
-     width:1165px;
-     border:1px solid;
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:1165px;
+   
     }
-    #about-us   .bg2{
-      margin-top: -600px;
+    #about-us h1{
+      font-size: 40px;
+    }
+    #about-us h2{
+      font-size: 22px;
+      font-weight: 500;
+    }
+    #about-us p{
+      font-size: 16px;
+      color:#8A8A8A;
+    }
+    #about-us .pmini{
+      font-size: 12px;
+      color:#6B6B6B;
+    }
+    #about-us .small_img{
+     position: relative;
+     height:45px;
+     width:45px;
+     padding-top: 0px;
+    }
+    #about-us .bg2{
+    margin-top: -600px;
     margin-left: 150px;
     z-index: 1;
     /*animation: spin 4s linear infinite;*/
   }
-  #about-us .p{
-    font-family: 'Roboto', sans-serif; 
-  }
+  
    
 /*features*/
 #features {
   margin-top: 10rem;
-  margin-left: 225px;
+  margin-left: auto;
+  margin-right: auto;
   width:1165px;
-  border:1px solid;
+  
   font-family: 'Roboto', sans-serif; 
 }
-#features h1{
+/*konstig syns ju knappt*/
+#features .marginpic{
+  background-color:#F6F6F6;
+  position:absolute;
+  z-index:-1;
+   margin-left: -260px;
+  margin-top: 20px;
   
+}
+#features h1{
   font-size: 40px;
 }
+#features h2{
+  font-size: 20px;
+}
 #features p{
-  
   font-size: 16px;
+  color:#8A8A8A;
+}
+#features .pmini{
+  font-size: 14px;
+  color:#8A8A8A;
 }
 .layer3{
   position: relative;
@@ -157,7 +211,7 @@ body{
   /*screens*/
   #screens {
     margin-top: 10rem;
-    margin-left: 225px;
+    margin-left: 160px;
     width:1165px;
     border:1px solid;
     font-family: 'Roboto', sans-serif; 
@@ -202,7 +256,7 @@ body{
   /*download*/
   #download {
     margin-top: 10rem;
-    margin-left: 225px;
+    margin-left: 160px;
     width:1165px;
     height:550px;
     border:1px solid;
@@ -220,13 +274,19 @@ body{
   }
   #contactus {
     margin-top: 10rem;
-    margin-left: 225px;
+    margin-left: 160px;
     width:1165px;
     border:1px solid;
     font-family: 'Roboto', sans-serif; 
     text-align: center;
     background: chartreuse;
    
+  }
+
+  .footerbg{
+    height:550px;
+    background: url(images/footerbg.svg);
+    background-size: cover;
   }
  /**/
     
@@ -259,10 +319,6 @@ body{
              background-repeat: no-repeat;
              background-position:-50px -150px;*/
            }
-           .navbar {
-            margin-left: 0px;
-            width:100%;
-            border:2px solid;
-          }   
+          
              
       }
