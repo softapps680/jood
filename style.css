@@ -20,20 +20,23 @@ body{
       margin:auto;
       width: 1160px;
       }   
-    .navbar-light .navbar-nav .nav-link {
+  
+      .navbar-light .navbar-nav .nav-link {
       content: "";
       color: #ffffff;
       font-weight: 500;
-      border-bottom: 3px solid transparent;
-     
-     }
-    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-      
+      }
+      .navbar-light .navbar-nav  .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link.active {
       color: #ffbb00;
-      border-color:#ffbb00;
-      width: 62%;
-      
-    }
+      }
+      .navbar-light .navbar-nav .nav-link:hover::after, .navbar-dark .navbar-nav .nav-link:focus::after {
+        content: "";
+        border-bottom: 3px solid #ffbb00;
+        display: block;
+        width: 60%;
+      }
+    
+    
     
  .btn{
     color: #ffffff;
@@ -100,8 +103,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width:1165px;
-   
-    }
+   }
     /*reuseable about us features*/
     .heading{
       border-radius: 15px;
@@ -118,6 +120,7 @@ body{
       font-size: 22px;
       font-weight: 500;
     }
+    
     #about-us p{
       font-size: 16px;
       color:#8A8A8A;
@@ -131,7 +134,7 @@ body{
     margin-top: -600px;
     margin-left: 150px;
     z-index: 1;
-    /*animation: spin 6s linear infinite;*/
+    animation: spin 6s linear infinite;
   }
   
    
@@ -174,7 +177,7 @@ body{
   position: relative;
   display: inline-block;
   right: -100px;
-  /*animation: spin 6s linear infinite;*/
+  animation: spin 6s linear infinite;
 }
 .layer2{
     position: relative;
@@ -377,66 +380,97 @@ body{
   
  
     
-     @media screen and (max-width: 640px) {
-      .body{
-        width:100%;
-      }
-     .navbar-brand{
-       margin-left: 40px;
-     }
-      .navbar {
-        background-color: #2791fc;
-        width: 1000px;
-        text-align: center;
-       }
-       #topbg  {
-        background: none;
-        background-color: #2791fc;
-        
-        height:820px;
-        width: 1100px;
-        }
+  @media screen and (max-width: 600px) {
      
-     
-      #showcase{
-        
-        margin-top: 50px;
-        margin-left: 60px;
-        margin-right: 0;
-        width: 800px;
-        
-      }
-     #showcase .col1{
-       margin-top: 700px;
-        width: 400px;
-      }
-      #showcase .col2{
+  .navbar {
+  background-color: transparent;
+  width: 80%;
+  text-align: center;
+  }
+  .navbar-brand{
+  margin-left:100px;
+  }
+  #topbg  {
+  background-image:none;
+  background-color: #3096FE;
+  height:820px;
+  width: 1200px;
+  }
+  /***avdelningar****/   
+  #showcase{
+  margin-top: 50px;
+  margin-right: 0;
+  margin-left: 200px;
+  width: 640px;
+  }
+  #about-us, #features,#screens{ 
+  margin-top: 280px;
+  text-align: center;
+  width: 80%;
+  }
+  #contactus{
+  width: 60%;
+  }
+  #download{
+   margin-top: 280px;
+   margin-left: 20%;
+  }
 
-        width: 600px;
-      }
-      #showcase .mob1  {
-       display: none;
-      }
-      #showcase .mob2 {
-        margin-left: -40px;
-        border:2px solid;
-      }
-      #contactus .cropped1,.cropped2,.cropped3 {
+  
+  #showcase .mob1  {
+  display: none;
+  }
+  #showcase .mob2 {
+  margin-left: -100px;
+  margin-top:20px;
+  }
+  
+  
+  #about-us .first{
+  grid-area: first;
+  margin-top: 100px;
+  }
+  #about-us  .second{
+  grid-area: second;
+  }
+  #about-us .bg2{
+  margin-right: 160px;
+  }
+  #about-us .row {
+  text-align: center;
+  display: grid;
+  grid-template-areas:    "second"
+                            "first";
+  }
+
+
+  #features .first{
+  grid-area: first;
+  margin-top: -100px;
+  }
+  #features  .second{
+  grid-area: second;
+  margin-top: 80px;
+  padding-right: 100px;
+  }
+  #features .layer1{
+  margin-right: 250px;
+  }
+  #features .row {
+  text-align: center;
+  display: grid;
+  grid-template-areas:    "first"
+                            "second";
+  }
+  /*features*/
+  .cropped1,.cropped2,.cropped3 {
      display:none;
    }
-   #about-us, #features,#screens, #download, #contactus{
-     width: 800px;
-     margin-top: 200px;
-   }
- 
- 
-   .bluebg .footerbg{
-  width: 1500px;
-  margin-left: 0;
- }
+  
+}
     
     
-          }
+          
            
              
    
