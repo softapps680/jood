@@ -21,14 +21,18 @@ body{
       width: 1160px;
       }   
     .navbar-light .navbar-nav .nav-link {
+      content: "";
       color: #ffffff;
       font-weight: 500;
       border-bottom: 3px solid transparent;
+     
      }
     .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+      
       color: #ffbb00;
       border-color:#ffbb00;
       width: 62%;
+      
     }
     
  .btn{
@@ -122,12 +126,7 @@ body{
       font-size: 12px;
       color:#6B6B6B;
     }
-    #about-us .small_img{
-     position: relative;
-     height:45px;
-     width:45px;
-     padding-top: 0px;
-    }
+    
     #about-us .bg2{
     margin-top: -600px;
     margin-left: 150px;
@@ -166,7 +165,11 @@ body{
   font-size: 14px;
   color:#8A8A8A;
 }
-
+#features .small_img{
+  top:0;
+  height:45px;
+  width:45px;
+  }
 .layer3{
   position: relative;
   display: inline-block;
@@ -196,8 +199,8 @@ body{
    }
     
    #screens h1{
-  font-size: 40px;
-  text-align: center;
+    font-size: 40px;
+    text-align: center;
     }
     #screens h2{
       font-size: 40px;
@@ -206,7 +209,7 @@ body{
       color:#3096FE;
     }
   #screens p{
-  text-align: center;
+    text-align: center;
     font-size: 16px;
     color: #8A8A8A;
   }
@@ -372,35 +375,68 @@ body{
   }
   
   
- /**/
+ 
     
-     @media screen and (max-width: 600px) {
-      
-      #topbg {
-           
-           
-             background: blue;
-           /*  background: url(./Group\ 4634.svg) , url(./Rectangle\ 1914.svg);*/
-            /* background-size: auto;
-             background-repeat: no-repeat;
-             background-position:-250px -1029px;
-             background-size: auto;*/
-             width: 1050px;
-             height:200px;
-           }
-           #showcase{
-            width:100%;
-           }
-           #about-us{
-            width:100%;
-           }
-           /*.toppic{
-             background: url(./Group\ 4634_sm.png) , url(./Rectangle\ 1914_sm.png);
-            
-             
-             background-repeat: no-repeat;
-             background-position:-50px -150px;*/
-           }
-          
-             
+     @media screen and (max-width: 640px) {
+      .body{
+        width:100%;
       }
+     .navbar-brand{
+       margin-left: 40px;
+     }
+      .navbar {
+        background-color: #2791fc;
+        width: 1000px;
+        text-align: center;
+       }
+       #topbg  {
+        background: none;
+        background-color: #2791fc;
+        
+        height:820px;
+        width: 1100px;
+        }
+     
+     
+      #showcase{
+        
+        margin-top: 50px;
+        margin-left: 60px;
+        margin-right: 0;
+        width: 800px;
+        
+      }
+     #showcase .col1{
+       margin-top: 700px;
+        width: 400px;
+      }
+      #showcase .col2{
+
+        width: 600px;
+      }
+      #showcase .mob1  {
+       display: none;
+      }
+      #showcase .mob2 {
+        margin-left: -40px;
+        border:2px solid;
+      }
+      #contactus .cropped1,.cropped2,.cropped3 {
+     display:none;
+   }
+   #about-us, #features,#screens, #download, #contactus{
+     width: 800px;
+     margin-top: 200px;
+   }
+ 
+ 
+   .bluebg .footerbg{
+  width: 1500px;
+  margin-left: 0;
+ }
+    
+    
+          }
+           
+             
+   
